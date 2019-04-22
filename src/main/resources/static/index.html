@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF8">
+<title>Insert title here</title>
+<script type="text/javascript" src='webjars/jquery/jquery.min.js'
+	charset="utf-8"></script>
+<script type="text/javascript"
+	src='webjars/datatables/js/jquery.dataTables.min.js' charset="utf-8"></script>
+
+<script type="text/javascript" src='webjars/angularjs/angular.min.js'
+	charset="utf-8"></script>
+<script type="text/javascript"
+	src='webjars/angularjs/angular-sanitize.min.js' charset="utf-8"></script>
+<script type="text/javascript"
+	src='webjars/angularjs/angular-route.min.js' charset="utf-8"></script>
+<script type="text/javascript"
+	src='webjars/angularjs/angular-cookies.min.js' charset="utf-8"></script>
+<script type="text/javascript"
+	src='webjars/angular-datatables/dist/angular-datatables.min.js'
+	charset="utf-8"></script>
+<script language="javascript" src="webjars/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="webjars/bootstrap/css/bootstrap.min.css" >
+
+<script type="text/javascript" src="webjars/bootstrap/js/transition.js" charset="utf-8"></script>
+<script type="text/javascript" src="webjars/bootstrap/js/collapse.js" charset="utf-8"></script> 
+
+
+<script language="javascript" src="webjars/momentjs/min/moment.min.js" charset="utf-8" ></script>
+<script language="javascript" src="webjars/Eonasdan-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"  charset="utf-8"  ></script>
+<link rel="stylesheet" href="webjars/Eonasdan-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+
+<script language="javascript" src="webjars/bootstrap-daterangepicker/js/bootstrap-daterangepicker.js"  charset="utf-8"  ></script>
+<link rel="stylesheet" href="webjars/bootstrap-daterangepicker/css/bootstrap-daterangepicker.css">
+
+</head>
+<body>
+	Hello
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.datepick').datetimepicker({
+				format:'YYYY/MM/DD',
+            });
+			$('.datetimepicker').daterangepicker();
+		});
+	</script>
+	<div class="form-group required">
+		<div class="input-group">
+			<input type="text" class="form-control datepick"
+				name="frmSaveOffice_startdt" id="frmSaveOffice_startdt" required>
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-calendar"></span>
+			</div>
+		</div>
+		<div class="input2-group">
+			<input type="text" class="form-control datetimepicker"
+				name="frmSaveOffice_startdt" id="frmSaveOffice_startdt" required>
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-calendar"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
